@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Loading State -->
-    <div v-if="store.isLoading" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    <div v-if="store.isLoading" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <div v-for="n in 8" :key="n" class="glass-card p-6 animate-pulse">
         <div class="skeleton w-24 h-24 rounded-full mx-auto mb-4"></div>
         <div class="skeleton h-6 w-3/4 mx-auto mb-2"></div>
@@ -36,7 +36,7 @@
       <transition-group
         name="list"
         tag="div"
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"
       >
         <div
           v-for="(player, index) in players"
